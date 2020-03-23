@@ -943,7 +943,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 627807506}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -1266,7 +1266,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 867857572}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 59efcc8f8d2f96f4b9793881fb66db37, type: 3}
   m_Name: 
@@ -1370,9 +1370,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b3c3ec49e2dfcfd4db4f2142bc90c954, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ball: {fileID: 867857572}
+  cueBall: {fileID: 867857572}
   line: {fileID: 963680918}
-  shotSpeed: 10000
+  ball: {fileID: 1780251285}
 --- !u!1 &927293955
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,7 +1516,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: acae55fc78215c549b552c4208ebac8e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1701,6 +1701,8 @@ GameObject:
   - component: {fileID: 1263800445}
   - component: {fileID: 1263800444}
   - component: {fileID: 1263800443}
+  - component: {fileID: 1263800447}
+  - component: {fileID: 1263800448}
   m_Layer: 0
   m_Name: CueStick
   m_TagString: Untagged
@@ -1750,7 +1752,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1263800442}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
@@ -1776,6 +1778,34 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 93}
+--- !u!95 &1263800447
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263800442}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 985e303dc2c9a5e46bc55290edf147a8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &1263800448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1263800442}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fb87dc509f755b4e84c600e28babda2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1317203873
 GameObject:
   m_ObjectHideFlags: 0
@@ -1948,6 +1978,23 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 4
   m_CollisionDetection: 2
+--- !u!95 &1405419130
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405419128}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 4f5e085e3ef964849aa45fd32708dfcb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1564619232
 Prefab:
   m_ObjectHideFlags: 0
