@@ -222,7 +222,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1974549022683218, guid: 19c6da03f20d08748a96924fdb23b896, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 19c6da03f20d08748a96924fdb23b896, type: 2}
@@ -410,7 +410,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!33 &205034346
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -507,7 +507,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!33 &256134107
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -792,7 +792,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1038386012293728, guid: c6b00a339a1e19b489d4c19fc2a65497, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c6b00a339a1e19b489d4c19fc2a65497, type: 2}
@@ -864,7 +864,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1569551473510752, guid: 2bb5f22898813c94ea6e384720fefa1f, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2bb5f22898813c94ea6e384720fefa1f, type: 2}
@@ -936,7 +936,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1126289489941206, guid: 4baba3ff26fc87c45949647780427eae, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 23050303626122268, guid: 4baba3ff26fc87c45949647780427eae,
         type: 2}
@@ -1059,7 +1059,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!33 &570090543
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -1114,7 +1114,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1175616094122798, guid: e6019eb8718533a4e979d2d882648dca, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     - target: {fileID: 23977457423163074, guid: e6019eb8718533a4e979d2d882648dca,
         type: 2}
@@ -1369,7 +1369,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1907361551434500, guid: e52c6e466cb97ae48a45707eb083a651, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e52c6e466cb97ae48a45707eb083a651, type: 2}
@@ -1410,7 +1410,7 @@ GameObject:
   - component: {fileID: 941013598}
   m_Layer: 0
   m_Name: CueBall
-  m_TagString: Player
+  m_TagString: Player2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1871,6 +1871,7 @@ RectTransform:
   - {fileID: 500895908}
   - {fileID: 1692310435}
   - {fileID: 181866163}
+  - {fileID: 1351284882}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1879,6 +1880,80 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1351284881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1351284882}
+  - component: {fileID: 1351284884}
+  - component: {fileID: 1351284883}
+  m_Layer: 5
+  m_Name: ClearUI
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1351284882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351284881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -400}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1292252226}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 250, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1351284883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351284881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 30
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 0
+    m_MaxSize: 40
+    m_Alignment: 4
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: GAME CLEAR
+--- !u!222 &1351284884
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1351284881}
 --- !u!1 &1428017524
 GameObject:
   m_ObjectHideFlags: 0
@@ -2001,7 +2076,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!33 &1470239496
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2227,7 +2302,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1142454213520476, guid: 6fc7fca5127e001488cfdba6e9fa6f02, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fc7fca5127e001488cfdba6e9fa6f02, type: 2}
@@ -2299,7 +2374,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1155237094412334, guid: a6772f6c9ee8b224f8d3bf7be64773ac, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6772f6c9ee8b224f8d3bf7be64773ac, type: 2}
@@ -2452,7 +2527,7 @@ Prefab:
         type: 2}
     - target: {fileID: 1964743580678272, guid: ed02f657fa9f15d41a12921b2e6d3644, type: 2}
       propertyPath: m_TagString
-      value: Player
+      value: Player2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed02f657fa9f15d41a12921b2e6d3644, type: 2}
@@ -2674,7 +2749,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!33 &1745464673
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -2682,6 +2757,34 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1745464668}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1760380727
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1760380728}
+  m_Layer: 0
+  m_Name: GameClear
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1760380728
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1760380727}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.2367554, y: 8.256836, z: -4.4335938}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 19
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1864652116
 GameObject:
   m_ObjectHideFlags: 0
@@ -3138,7 +3241,7 @@ CapsuleCollider:
   m_Radius: 0.5
   m_Height: 2
   m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Center: {x: 0, y: 0.2, z: 0}
 --- !u!33 &2056650113
 MeshFilter:
   m_ObjectHideFlags: 0
