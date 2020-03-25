@@ -9,6 +9,8 @@ public class TimeManager : MonoBehaviour
 	public Text timerText;
 	public float totalTime;
 	int seconds;
+	int minute;
+	int x = 0;
 
 	// Use this for initialization
 	void Start()
@@ -20,10 +22,21 @@ public class TimeManager : MonoBehaviour
 	// 時間経過計測
 	void Update()
 	{
-		totalTime += Time.deltaTime;
-		seconds = (int)totalTime;
 		
-		timerText.text = seconds.ToString();
+
+		if (x == 1)
+		{
+			totalTime += Time.deltaTime;
+			seconds = (int)totalTime;
+			timerText.text = minute.ToString("00") + ":" + seconds.ToString("00");
+		}
+
+			if (Input.GetKey(KeyCode.Space))
+		{
+			x = 1;
+			
+		}
+		
 	}
 
 

@@ -83,6 +83,6 @@ public class BallController : MonoBehaviour {
 		Camera.main.transform.position = pos;
 	
 	}
-
 	
+
 }
