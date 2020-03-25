@@ -1,14 +1,8 @@
 fileFormatVersion: 2
-<<<<<<< HEAD:Assets/Scripts/Physic Material.physicMaterial.meta
-guid: 109196c6f2371d9478d8d771006b519e
-NativeFormatImporter:
-=======
-guid: 1eeca726ffff3af4197a83781626cf95
+guid: b5881433e97ea594f80178c0570cb3c2
 folderAsset: yes
 DefaultImporter:
->>>>>>> 087ed11815d0361002d0645a84cb3d5d058ddd7e:Assets/Scripts/Soutea.meta
   externalObjects: {}
-  mainObjectFileID: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
