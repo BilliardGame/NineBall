@@ -57,10 +57,10 @@ public class BallController : MonoBehaviour {
 			transform.GetComponent<Rigidbody>().AddForce(v);
 		}
 
-		//MAXゲージを1000にする
-		if (power >= 1000)
+		//MAXゲージを100にする
+		if (power >= 500)
 		{
-			power = 1000;
+			power = 500;
 		}
 
 	
