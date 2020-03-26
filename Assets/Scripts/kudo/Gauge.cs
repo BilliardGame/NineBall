@@ -8,22 +8,40 @@ public class Gauge : MonoBehaviour {
 
 	private static Vector3 sizeDelta;
 
-	void Shot() {
+	GameObject image;
+	float x = 0.001f;
+
+	private void Start()
+	{
+		//ImageをGameObjectとして取得
+		image = GameObject.Find("Image");
+	}
+
+	public void HPDown(float current, int max)
+	{
+		//ImageというコンポーネントのfillAmountを取得して操作する
+		image.GetComponent<Image>().fillAmount = current / max;
+	}
+
+		void Shot() {
+		
+
+		if (x == 0.001f)
+		{
+			x++;
+		}
+
 		//スペース入力中はゲージを増やす
 		if (Input.GetKey(KeyCode.Space))
 		{
-			
+			x = 0.001f;
 		}
 
 
-
-		//スペースキーを離したとき
-		if (Input.GetKeyUp(KeyCode.Space))
+		//スペースキーを離したらゲージを0に戻す
+		/*if (Input.GetKeyUp(KeyCode.Space))
 		{
-			//gauge.SendMessage("shot",rt.sizeDelta.z * 
-
-			//発射したらゲージを0に戻す
-			Gauge.sizeDelta = new Vector3(0.0f, 50.0f);
-		}
+			x = 0;
+		}*/
 	}
 }

@@ -8,7 +8,7 @@ public class TimeManager : MonoBehaviour
 
 	public Text timerText;
 	public float totalTime;
-	int seconds;
+	float seconds;
 	int minute;
 	int oldSeconds = 0;
 	int x = 0;
@@ -27,11 +27,11 @@ public class TimeManager : MonoBehaviour
 
 		if (x == 1)
 		{
-			totalTime += Time.deltaTime;
-			if (seconds >= 60f)
+			seconds += Time.deltaTime;
+			if (seconds >= 9)
 			{
 				minute++;
-				seconds = seconds - 60;
+				seconds = seconds - 9;
 			}
 			//seconds = (int)totalTime;
 					timerText.text = minute.ToString("00") + ":" + seconds.ToString("00");
@@ -43,7 +43,7 @@ public class TimeManager : MonoBehaviour
 			x = 1;
 		}
 
-		oldSeconds = seconds;
+		//oldSeconds = seconds;
 	}
 
 

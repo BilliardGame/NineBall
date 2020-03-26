@@ -57,6 +57,12 @@ public class BallController : MonoBehaviour {
 			transform.GetComponent<Rigidbody>().AddForce(v);
 		}
 
+		//MAXゲージを1000にする
+		if (power >= 1000)
+		{
+			power = 1000;
+		}
+
 	
 		//左矢印キーの処理。視点を回す
 		if (Input.GetKey(KeyCode.LeftArrow))
