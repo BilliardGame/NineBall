@@ -28,10 +28,10 @@ public class TimeManager : MonoBehaviour
 		if (x == 1)
 		{
 			seconds += Time.deltaTime;
-			if (seconds >= 9)
+			if (seconds >= 59)
 			{
 				minute++;
-				seconds = seconds - 9;
+				seconds = seconds - 59;
 			}
 			//seconds = (int)totalTime;
 					timerText.text = minute.ToString("00") + ":" + seconds.ToString("00");

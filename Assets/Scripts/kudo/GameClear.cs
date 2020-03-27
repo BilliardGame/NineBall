@@ -6,9 +6,10 @@ public class GameClear : MonoBehaviour {
 
 	public GameObject ClearUI;
 
+
 	void Start()
 	{
-		ClearUI.SetActive(false);
+		
 	}
 
 	private void Update()
@@ -16,15 +17,16 @@ public class GameClear : MonoBehaviour {
 		
 	}
 
-
-	/*void Clear()
+	/*
+	void Clear()
 	{
-		int count = GameObject.FindGameObjectsWithTag("").Length;
+		int count = GameObject.FindGameObjectsWithTag("ClearUI").Length;
 
 		if (count == 0)
 		{
 			// オブジェクトをアクティブにする
 			ClearUI.SetActive(true);
 		}
-	}*/
+	}
+	*/
 }
